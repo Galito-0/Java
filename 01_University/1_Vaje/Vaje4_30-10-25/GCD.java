@@ -8,10 +8,10 @@ public class GCD {
         int n = sc.nextInt();
         int g = sc.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = i; j <= n; j++) {
-                if (gcd(i, j) == g) {
-                    System.out.println("(" + i +", " + j + ")");
+        for (int i = 1; i <= n / g; i++) {
+            for (int j = i; j <= n / g; j++) {
+                if (gcd(i, j) == 1) {
+                    System.out.println("(" + (g * i) +", " + (g * j) + ")");
                 }
             }
         }
@@ -37,10 +37,10 @@ public class GCD {
 //         int n = sc.nextInt();
 //         int g = sc.nextInt();
 
-//         for (int i = 1; i <= n / g; i++) {
-//             for (int j = i; j <= n / g; j++) {
-//                 if (gcd(i, j) == 1) {
-//                     System.out.println("(" + (g * i) +", " + (g * j) + ")");
+//         for (int i = 1; i <= n; i++) {
+//             for (int j = i; j <= n; j++) {
+//                 if (gcd(i, j) == g) {
+//                     System.out.println("(" + i +", " + j + ")");
 //                 }
 //             }
 //         }
