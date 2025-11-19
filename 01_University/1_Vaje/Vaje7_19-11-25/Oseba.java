@@ -80,6 +80,7 @@ public class Oseba {
 
         //# Gremo skozi verigo očetov
         while (trenutni_oce != null) {
+            // Vrnemo true, če najdemo osebo this, ki je očetovski prednik osebe os
             if (trenutni_oce == this) {
                 return true;
             }
