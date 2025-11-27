@@ -89,6 +89,11 @@ public class DN02_63250206 {
     }
 
     public static int Spiralnica(int d, int n, int[] tipke) {
+        //# Če je d == 0, je tipkovnica samo 1 kvadrat (0, 0) => vse razdalje so 0.
+        if (d == 1) {
+            return 0;
+        }
+        
         int dolzina_poti = 0;
 
         //# Defininiranje tabele spirala, postavitev števila 0 v center (s koordinatami centra (d / 2))
